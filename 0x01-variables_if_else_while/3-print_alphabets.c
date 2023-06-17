@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  * discription:'printing lowercase alphabet and uppercase alphabet
@@ -7,20 +8,20 @@
 */
 int main(void)
 {
-	char l;
-	char u;
+        char l;
+        char u;
 
-	while (l <= 'z')
-	{
-		putchar(l);
-		l++;
-	}
+        while (l <= 'z')
+        {
+                putchar(l);
+                l++;
+        }
 
-	while (u <= 'Z')
-	{
-		putchar(u);
-		u++;
-	}
-	putchar('\n');
-	return (0);
+        while (u <= 'Z')
+        {
+                putchar(u);
+                u++;
+        }
+        putchar('\n');
+        return (0);
 }
