@@ -1,27 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  * main - Entry point
- * discription:'printing lowercase alphabet and uppercase alphabet
+ * discription: 'lower and upper alphabet
  * Return: always 0
 */
 int main(void)
 {
-        char l;
-        char u;
+	char lower;
 
-        while (l <= 'z')
-        {
-                putchar(l);
-                l++;
-        }
+	for (lower = 'a'; lower <= 'z'; lower++)
+	putchar(lower);
 
-        while (u <= 'Z')
-        {
-                putchar(u);
-                u++;
-        }
-        putchar('\n');
-        return (0);
+	for (lower = 'A'; lower <= 'Z'; lower++)
+	putchar(lower);
+	putchar('\n');
+	return (0);
 }
