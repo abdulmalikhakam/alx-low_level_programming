@@ -1,22 +1,13 @@
 #include "main.h"
 /**
- * main - check the code.
- * Return: Always 0.
-*/
-int main(void)
+ * _isalpha - Checks for alphabetic order
+ *
+ * @c: alpabet to check for
+ *
+ * Return: 1 if c is a letter, 0 otherwise
+ */
+int _isalpha(int c)
 {
-	int c;
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 
-
-	c = _isalpha('H');
-	 _putchar(c + '0');
-	c = _isalpha('o');
-	 _putchar(c + '0');
-	c = _isalpha(108);
-	 _putchar(c + '0');
-	c = _isalpha(';');
-	 _putchar(c + '0');
-
-	 _putchar('\n');
-	return (0);
 }
