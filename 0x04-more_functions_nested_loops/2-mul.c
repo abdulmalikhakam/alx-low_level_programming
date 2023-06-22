@@ -8,6 +8,5 @@
  */
 int mul(int a, int b)
 {
-	multiply = int a * int b;
-	_putchar("%d", multiply);
+	return (a * b);
 }
