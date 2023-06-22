@@ -9,7 +9,7 @@ int _isupper(int c)
 {
 	int c;
 
-	while (c = 'is uppercase')
+	while (c = 'A'; c <= 'Z')
 		return (1);
 	else
 		return (0);
