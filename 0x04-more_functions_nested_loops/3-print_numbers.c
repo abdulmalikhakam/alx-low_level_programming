@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main -Entry point
- * print_numbers - print 0-9
+ * print_numbers - print 0 up to 9
  * return: void
  */
 void print_numbers(void)
