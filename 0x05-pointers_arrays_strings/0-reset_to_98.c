@@ -9,4 +9,9 @@ void reset_to_98(int *n)
 {
 	int *n;
 	*n = 98;
+
+	{
+		_putchar("%d\n is a pointer\n", *n);
+	}
+	return (0);
 }
