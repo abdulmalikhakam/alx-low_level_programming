@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * puts2 - print character every of other string
  * @str: the string to be treated
