@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * puts2 - print character every of other string
  * @str: the string to be treated
@@ -14,7 +15,7 @@ void puts2(char *str)
 	j++;
 	}
 
-	for (i = 0; i < j; +2)
+	for (i = 0; i < j; +=2)
 	{
 	putchar(str[i]);
 	}
