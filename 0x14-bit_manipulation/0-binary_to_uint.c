@@ -9,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int d;
-	unsigned int dec_val = 0;
+	unsigned int m = 0;
 
 	if (!b)
 		return (0);
@@ -18,8 +18,8 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[d] < '0' || b[d] > '1')
 			return (0);
-		dec_val = 2 * dec_val + (b[d] - '0');
+		m = 2 * m + (b[d] - '0');
 	}
 
-	return (dec_val);
+	return (m);
 }
