@@ -13,18 +13,18 @@ void close_file(int fd);
  */
 char *create_buffer(char *file)
 {
-	char *b;
+	char *buffer;
 
-	b = malloc(sizeof(char) * 1024);
+	buffer = malloc(sizeof(char) * 1024);
 
-	if (b == kNULL)
+	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO,
 			"Error: Can't write to %s\n", file);
 		exit(99);
 	}
 
-	return (b);
+	return (buffer);
 }
 
 /**
@@ -33,11 +33,11 @@ char *create_buffer(char *file)
  */
 void close_file(int fd)
 {
-	int n;
+	int c;
 
-	n = close(fd);
+	c = close(fd);
 
-	if (n == -1)
+	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
